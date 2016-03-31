@@ -1,18 +1,18 @@
 # Static_BG
 HTML with clean static BG changing when scroll
 
-Varsion code:_
-a.b.c_
+Varsion code:
+a.b.c
 a)
-    0 for alpha (status)
-    1 for beta (status)
-    2 for release candidate
-    3 for (final) release
+0 for alpha (status)
+1 for beta (status)
+2 for release candidate
+3 for (final) release
 b)
-    bug fixes, simple changes b++, but compatibile with mayor version
+bug fixes, simple changes b++, but compatibile with mayor version
 C) 
-    date:
-    yymmdd
+date:
+yymmdd
 
 | lp. | date       | version |  log                                   |
 | --- |:-------:|:-----:| --------------------------------------:|
@@ -20,5 +20,5 @@ C)
 | 2   | -          | 2.1.yymmdd   | - |
 
 
->Autor: Marcin Pastuszak_
+>Autor: Marcin Pastuszak
 >Inspiration: [grafmag.pl](http://grafmag.pl/)_
