@@ -8,11 +8,11 @@ a) <br>
 1 for beta (status) <br>
 2 for release candidate <br>
 3 for (final) release <br>
-b)
-bug fixes, simple changes b++, but compatibile with mayor version
-C) 
-date:
-yymmdd
+b) <br>
+bug fixes, simple changes b++, but compatibile with mayor version <br>
+C) <br>
+date: <br>
+yymmdd <br>
 
 | lp. | date       | version |  log                                   |
 | --- |:-------:|:-----:| --------------------------------------:|
@@ -20,5 +20,5 @@ yymmdd
 | 2   | -          | 2.1.yymmdd   | - |
 
 
->Autor: Marcin Pastuszak
->Inspiration: [grafmag.pl](http://grafmag.pl/)_
+>Autor: Marcin Pastuszak <br>
+>Inspiration: [grafmag.pl](http://grafmag.pl/) <br>
