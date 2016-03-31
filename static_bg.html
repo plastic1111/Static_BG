@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>static bg</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+body
+{
+margin: 0px;
+padding: 0px;
+}
+header
+{
+	position: fixed;
+	width: 100%;
+	height: 42px;
+	background-color: #363636;
+	color: #565656;
+	font-size: 18px;
+	font-family: Oswald, sans-serif;
+}
+header div
+{
+	position: absolute;
+	display: block;
+	width: 100px;
+	font-size: 18px;
+	line-height: 22px;
+	height: 22px;
+	top: 10px;
+	left: 50px;
+}
+header ul
+{
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	width: 400px;
+	margin: 0px;
+	margin-left: -200px;
+	left: 50%;
+	height: 42px;
+
+	padding: 0px;
+}
+header ul li
+{
+	display: inline-block;
+	width: 80px;
+	line-height: 42px;
+}
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover
+{
+	color: #a9a9a9;
+}
+.image
+{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+.tresc
+{
+	position: relative;
+  width: 100%;
+  height: 400px;
+  font-family: Oswald, sans-serif;
+}
+.tresc img
+{
+	height: 40%;
+	width: auto;
+	position: absolute;
+	left: 40%;
+}
+.tresc_content
+{
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	display: none;
+	white-space: nowrap;
+	color: #363636;
+	font-size: 1.5em;
+	text-align: right;
+}
+fotter
+{
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 42px;
+  font-size: 28px;
+  line-height: 42px;
+  background-color: #363636;
+  color: #545454;
+  font-family: Oswald, sans-serif;
+}
+</style>
+<script>
+
+$(document).ready(function(){
+	var $htabim=parseInt($('.image').css('height').replace("px", ""));
+	var $htabtr=parseInt($('.tresc').css('height').replace("px", ""));
+
+
+	$(window).scroll(function(){
+
+		if($(window).scrollTop() >= 0 && $(window).scrollTop() <= $htabim+$htabtr/2){$('.tresc_content:eq(0)').fadeIn(1000)}
+		else if ($(window).scrollTop() <= $htabim/3 || $(window).scrollTop() >= $htabim+$htabtr/2 ){$('.tresc_content:eq(0)').fadeOut(500)}
+		if($(window).scrollTop() >= 0 && $(window).scrollTop() <= 2*$htabim+$htabtr+$htabtr/2){$('.tresc_content:eq(1)').fadeIn(1000)}
+		else if ($(window).scrollTop() <= $htabim+$htabtr || $(window).scrollTop() >= 2*$htabim+$htabtr+$htabtr/2 ){$('.tresc_content:eq(1)').fadeOut(500)}
+		if($(window).scrollTop() >= 2*($htabim+$htabtr) && $(window).scrollTop() <= 3*$htabim+2*$htabtr+$htabtr/2){$('.tresc_content:eq(2)').fadeIn(1000)}
+		else if ($(window).scrollTop() <= 2*($htabim+$htabtr) || $(window).scrollTop() >= 3*$htabim+2*$htabtr+$htabtr/2 ){$('.tresc_content:eq(2)').fadeOut(500)}
+		if($(window).scrollTop() >= 3*($htabim+$htabtr) && $(window).scrollTop() <= 4*$htabim+3*$htabtr+$htabtr/2){$('.tresc_content:eq(3)').fadeIn(1000)}
+		else if ($(window).scrollTop() <= 3*($htabim+$htabtr) || $(window).scrollTop() >= 4*$htabim+3*$htabtr+$htabtr/2 ){$('.tresc_content:eq(3)').fadeOut(500)}
+
+});
+
+});
+</script>
+</head>
+
+<body>
+<header>
+<a href="#"><div>MARIO</div></a>
+<ul>
+<li><a href="#">LINK1</a></li>
+<li><a href="#">LINK2</a></li>
+<li><a href="#">LINK3</a></li>
+</ul>
+
+</header>
+<div class="image" style="background-image: url('01.jpg')">
+
+</div>
+<div class="tresc" >
+<div class="tresc_content" id="test">
+<p>"Logika zaprowadzi Cię z punktu A do punktu B. Wyobraźnia zaprowadzi Cię wszędzie!</p>
+<h2>Albert Einstein</h2>
+</div>
+</div>
+<div class="image" style="background-image: url('02.jpg')">
+
+</div>
+<div class="tresc">
+<div class="tresc_content">
+	<p>"Jeśli sądzisz, że potrafisz to masz rację. Jeśli sądzisz, że nie potrafisz- również masz rację."</p>
+	<h2>Henry Ford</h2>
+</div>
+</div>
+<div class="image" style="background-image: url('03.jpg')">
+
+</div>
+<div class="tresc">
+<div class="tresc_content">
+	<p>"Podejście jest tą małą rzeczą, która robi dużą różnicę."</p>
+	<h2>Winston Churchill</h2>
+</div>
+</div>
+<div class="image" style="background-image: url('05.jpg')">
+
+</div>
+<div class="tresc">
+<div class="tresc_content">
+	<p>"Nie obwiniaj się bez przerwy. Obwiń się raz i żyj dalej."</p>
+	<h2>Homer Simpson</h2>
+</div>
+</div>
+<fotter>STATIC BG</fotter>
+
+</body>
+</html>
